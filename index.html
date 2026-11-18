@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111315">
+  <meta name="description" content="Treino inteligente, progressão de carga e histórico — direto no celular.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Terceiro">
+  <title>Terceiro — treino inteligente</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.svg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Pular para o conteúdo</a>
+
+  <header class="app-header">
+    <button class="brand" type="button" data-action="go-home" aria-label="Ir para o treino de hoje">
+      <span class="brand-mark" aria-hidden="true"><span>T</span></span>
+      <span class="brand-copy"><strong>TERCEIRO</strong><small>treino inteligente</small></span>
+    </button>
+    <div class="header-meta" id="header-meta" aria-live="polite"></div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="bottom-nav" aria-label="Navegação principal">
+    <button type="button" data-view="today" class="nav-item is-active">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18V9m5 9V6m6 12V6m5 12V9M2 13h20"/></svg>
+      <span>Hoje</span>
+    </button>
+    <button type="button" data-view="progress" class="nav-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 16 5-5 4 3 7-8M16 6h4v4"/></svg>
+      <span>Progresso</span>
+    </button>
+    <button type="button" data-view="plan" class="nav-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg>
+      <span>Plano</span>
+    </button>
+    <button type="button" data-view="settings" class="nav-item">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19 13.5v-3l-2-.7a7 7 0 0 0-.8-1.8l.9-1.9L15 4l-1.9.9a7 7 0 0 0-2.2 0L9 4 6.9 6.1 7.8 8A7 7 0 0 0 7 9.8l-2 .7v3l2 .7a7 7 0 0 0 .8 1.8l-.9 1.9L9 20l1.9-.9a7 7 0 0 0 2.2 0l1.9.9 2.1-2.1-.9-1.9a7 7 0 0 0 .8-1.8z"/></svg>
+      <span>Ajustes</span>
+    </button>
+  </nav>
+
+  <section class="rest-dock" id="rest-dock" hidden aria-live="assertive">
+    <div class="rest-disc"><span id="rest-time">01:30</span></div>
+    <div class="rest-copy"><strong>Descanso</strong><small id="rest-next">Próxima série</small></div>
+    <button type="button" class="text-button" data-action="add-rest">+30s</button>
+    <button type="button" class="icon-button" data-action="skip-rest" aria-label="Encerrar descanso">×</button>
+  </section>
+
+  <dialog class="sheet" id="app-dialog">
+    <div class="sheet-handle" aria-hidden="true"></div>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept="application/json" hidden>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
