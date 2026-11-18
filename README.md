@@ -10,6 +10,8 @@ Versão 2 do app de acompanhamento de treinos. Funciona como PWA, guarda os dado
 - progressão dupla com sugestão de carga baseada no treino anterior;
 - descanso específico por exercício, timer persistente e vibração opcional;
 - troca de exercícios com alternativas do mesmo grupo ou padrão de movimento;
+- alternativas equivalentes por função, sem repetir exercícios já presentes na sessão;
+- mapa corporal com músculo principal e participação auxiliar em cada exercício;
 - volume semanal por grupo muscular, e1RM, histórico e consistência;
 - backup/importação em JSON;
 - funcionamento offline e instalação na tela inicial.

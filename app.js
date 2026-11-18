@@ -117,7 +117,106 @@
       name: 'Abdominal na polia', equipment: 'Polia alta', muscle: 'Core', pattern: 'flexão de tronco', type: 'isolation',
       image: 'Cable_Crunch', defaultKg: 20, increment: 2.5, rest: 60, range: [10, 15],
       cues: ['Aproxime costelas e pelve.', 'Mantenha o quadril estável.', 'Volte devagar sem puxar a corda com os braços.']
+    },
+    crossover: {
+      name: 'Crossover na polia', equipment: 'Polias', muscle: 'Peito', pattern: 'adução', type: 'isolation',
+      image: 'Cable_Crossover', defaultKg: 15, increment: 2.5, rest: 90, range: [10, 15],
+      cues: ['Mantenha o peito aberto e os ombros baixos.', 'Aproxime as mãos sem transformar o movimento em empurrão.', 'Controle a volta até sentir alongamento confortável.']
+    },
+    pullover_polia: {
+      name: 'Pullover na polia', equipment: 'Polia alta', muscle: 'Costas', pattern: 'puxar vertical', type: 'isolation',
+      image: 'Straight-Arm_Pulldown', defaultKg: 20, increment: 2.5, rest: 90, range: [10, 15],
+      cues: ['Mantenha os braços quase estendidos.', 'Leve a barra em direção às coxas usando as costas.', 'Evite compensar com a lombar.']
+    },
+    desenv_halteres: {
+      name: 'Desenvolvimento com halteres', equipment: 'Banco e halteres', muscle: 'Ombros', secondary: ['Tríceps'], pattern: 'empurrar vertical', type: 'compound',
+      image: 'Dumbbell_Shoulder_Press', defaultKg: 10, increment: 1, rest: 120, range: [8, 12],
+      cues: ['Mantenha pés firmes e costas apoiadas.', 'Inicie com os halteres próximos aos ombros.', 'Suba sem bater os halteres no topo.']
+    },
+    elev_lat_maq: {
+      name: 'Elevação lateral na máquina', equipment: 'Lateral raise machine', muscle: 'Ombros', pattern: 'abdução', type: 'isolation',
+      image: 'Side_Lateral_Raise', defaultKg: 15, increment: 2.5, rest: 75, range: [12, 20],
+      cues: ['Alinhe os ombros ao eixo da máquina.', 'Conduza o movimento pelos cotovelos.', 'Evite elevar os ombros em direção às orelhas.']
+    },
+    crucifixo_inverso: {
+      name: 'Crucifixo inverso', equipment: 'Peck deck invertido', muscle: 'Ombros', secondary: ['Costas'], pattern: 'puxar horizontal', type: 'isolation',
+      image: 'Reverse_Flyes', defaultKg: 20, increment: 2.5, rest: 75, range: [12, 20],
+      cues: ['Apoie o peito e mantenha os ombros baixos.', 'Abra os braços sem impulsionar o tronco.', 'Controle o retorno.']
+    },
+    agachamento_smith: {
+      name: 'Agachamento no Smith', equipment: 'Smith machine', muscle: 'Quadríceps', secondary: ['Glúteos'], pattern: 'agachar', type: 'compound',
+      image: 'Smith_Machine_Squat', defaultKg: 30, increment: 5, rest: 150, range: [8, 12],
+      cues: ['Posicione os pés para manter equilíbrio durante toda a descida.', 'Mantenha joelhos na direção dos pés.', 'Use amplitude confortável e controlada.']
+    },
+    extensora_unilateral: {
+      name: 'Extensora unilateral', equipment: 'Leg extension', muscle: 'Quadríceps', pattern: 'extensão de joelho', type: 'isolation',
+      image: 'Leg_Extensions', defaultKg: 15, increment: 2.5, rest: 75, range: [10, 15],
+      cues: ['Trabalhe uma perna por vez.', 'Mantenha quadril e costas apoiados.', 'Use a mesma amplitude nos dois lados.']
+    },
+    cadeira_flex: {
+      name: 'Cadeira flexora', equipment: 'Seated leg curl', muscle: 'Posteriores', pattern: 'flexão de joelho', type: 'isolation',
+      image: 'Seated_Leg_Curl', defaultKg: 25, increment: 2.5, rest: 90, range: [10, 15],
+      cues: ['Alinhe o joelho ao eixo da máquina.', 'Mantenha quadril e costas apoiados.', 'Flexione os joelhos sem acelerar a volta.']
+    },
+    flexora_unilateral: {
+      name: 'Flexora unilateral em pé', equipment: 'Standing leg curl', muscle: 'Posteriores', pattern: 'flexão de joelho', type: 'isolation',
+      image: 'Standing_Leg_Curl', defaultKg: 12.5, increment: 2.5, rest: 75, range: [10, 15],
+      cues: ['Mantenha o quadril apontado para frente.', 'Trabalhe uma perna por vez sem balançar.', 'Controle a volta até quase estender o joelho.']
+    },
+    stiff_halteres: {
+      name: 'Stiff com halteres', equipment: 'Halteres', muscle: 'Posteriores', secondary: ['Glúteos'], pattern: 'dobradiça', type: 'compound',
+      image: 'Romanian_Deadlift_With_Dumbbells', defaultKg: 12, increment: 2, rest: 150, range: [8, 12],
+      cues: ['Leve o quadril para trás mantendo os halteres perto das pernas.', 'Mantenha joelhos levemente flexionados.', 'Pare antes de perder a posição neutra da coluna.']
+    },
+    glute_bridge: {
+      name: 'Glute bridge na máquina', equipment: 'Glute drive', muscle: 'Glúteos', secondary: ['Posteriores'], pattern: 'extensão de quadril', type: 'compound',
+      image: 'Barbell_Glute_Bridge', defaultKg: 35, increment: 5, rest: 120, range: [8, 12],
+      cues: ['Apoie os pés por inteiro.', 'Suba o quadril até alinhar tronco e coxas.', 'Evite finalizar arqueando a lombar.']
+    },
+    abducao_cabo: {
+      name: 'Abdução de quadril no cabo', equipment: 'Polia baixa', muscle: 'Glúteos', pattern: 'abdução de quadril', type: 'isolation',
+      image: 'Cable_Hip_Abduction', defaultKg: 7.5, increment: 2.5, rest: 60, range: [12, 20],
+      cues: ['Mantenha o tronco estável.', 'Afaste a perna sem girar o quadril.', 'Controle o retorno sem perder a tensão.']
+    },
+    panturrilha_sentado: {
+      name: 'Panturrilha sentada', equipment: 'Seated calf raise', muscle: 'Panturrilhas', pattern: 'flexão plantar', type: 'isolation',
+      image: 'Seated_Calf_Raise', defaultKg: 30, increment: 5, rest: 90, range: [10, 15],
+      cues: ['Apoie a ponta dos pés com os joelhos flexionados.', 'Desça os calcanhares com controle.', 'Faça uma pausa curta no alto.']
+    },
+    crunch_maquina: {
+      name: 'Abdominal na máquina', equipment: 'Abdominal machine', muscle: 'Core', pattern: 'flexão de tronco', type: 'isolation',
+      image: 'Machine_Crunch', defaultKg: 20, increment: 2.5, rest: 60, range: [10, 15],
+      cues: ['Aproxime costelas e pelve.', 'Evite puxar com os braços.', 'Retorne devagar mantendo o abdômen ativo.']
     }
+  };
+
+  const ALTERNATIVES = {
+    supino_maq: ['supino_inclinado'], supino_inclinado: ['supino_maq'],
+    peck_deck: ['crossover'], crossover: ['peck_deck'],
+    puxada: ['pullover_polia'], pullover_polia: ['puxada'],
+    remada_bx: ['remada_art'], remada_art: ['remada_bx'],
+    shoulder_maq: ['desenv_halteres'], desenv_halteres: ['shoulder_maq'],
+    elev_lat_cabo: ['elev_lat_maq'], elev_lat_maq: ['elev_lat_cabo'],
+    face_pull: ['crucifixo_inverso'], crucifixo_inverso: ['face_pull'],
+    tri_polia: ['tri_maquina'], tri_maquina: ['tri_polia'],
+    scott: ['rosca_polia'], rosca_polia: ['scott'],
+    leg_press: ['hack_squat', 'agachamento_smith'],
+    hack_squat: ['leg_press', 'agachamento_smith'],
+    agachamento_smith: ['leg_press', 'hack_squat'],
+    extensora: ['extensora_unilateral'], extensora_unilateral: ['extensora'],
+    mesa_flex: ['cadeira_flex', 'flexora_unilateral'],
+    cadeira_flex: ['mesa_flex', 'flexora_unilateral'],
+    flexora_unilateral: ['mesa_flex', 'cadeira_flex'],
+    stiff_smith: ['stiff_halteres'], stiff_halteres: ['stiff_smith'],
+    hip_thrust: ['glute_bridge'], glute_bridge: ['hip_thrust'],
+    abdutora: ['abducao_cabo'], abducao_cabo: ['abdutora'],
+    panturrilha: ['panturrilha_sentado'], panturrilha_sentado: ['panturrilha'],
+    crunch_cabo: ['crunch_maquina'], crunch_maquina: ['crunch_cabo']
+  };
+
+  const MUSCLE_VIEW = {
+    Peito: 'front', Costas: 'back', Ombros: 'front', Tríceps: 'back', Bíceps: 'front',
+    Quadríceps: 'front', Posteriores: 'back', Glúteos: 'back', Panturrilhas: 'back', Core: 'front'
   };
 
   const PLANS = {
@@ -580,13 +679,61 @@
       <div class="exercise-body" ${open ? '' : 'hidden'}>
         <div class="exercise-intro">
           <div class="exercise-media">${image ? `<img src="${image}" alt="Demonstração de ${escapeAttr(ex.name)}" loading="lazy" onerror="this.parentElement.classList.add('image-failed');this.remove()">` : ''}<span>${initials(ex.name)}</span></div>
-          <div><p>${escapeHtml(ex.equipment)}</p><strong>${escapeHtml(record.recommendation)}</strong><button type="button" data-action="exercise-info" data-exercise="${escapeAttr(record.exerciseId)}">Técnica e alternativas</button></div>
+          <div><p>${escapeHtml(ex.equipment)}</p><strong>${escapeHtml(record.recommendation)}</strong><small>${escapeHtml(ex.pattern)}</small></div>
         </div>
+        ${renderMuscleOverview(ex, record.exerciseId)}
         <div class="set-head"><span>Série</span><span>Carga</span><span>Reps</span><span>RIR</span><span>Feita</span></div>
         <div class="set-list">${rows}</div>
         <button class="add-set" type="button" data-action="add-set" data-exercise="${escapeAttr(record.exerciseId)}">+ adicionar série</button>
       </div>
     </article>`;
+  }
+
+  function renderMuscleOverview(ex, exerciseId) {
+    const secondary = Array.isArray(ex.secondary) ? ex.secondary : ex.secondary ? [ex.secondary] : [];
+    return `<button class="muscle-overview" type="button" data-action="exercise-info" data-exercise="${escapeAttr(exerciseId)}">
+      ${renderAnatomyMap(ex, true)}
+      <span class="muscle-copy"><small>Áreas trabalhadas</small><strong>${escapeHtml(ex.muscle)}</strong><em>${secondary.length ? `Auxiliares: ${escapeHtml(secondary.join(' + '))}` : 'Foco isolado'}</em></span>
+      <b>ver mapa</b>
+    </button>`;
+  }
+
+  function renderAnatomyMap(ex, compact = false) {
+    const preferred = MUSCLE_VIEW[ex.muscle] || 'front';
+    if (compact) return `<span class="anatomy-map is-compact">${bodyFigure(preferred, ex)}<small>${preferred === 'front' ? 'frente' : 'costas'}</small></span>`;
+    return `<div class="anatomy-map is-detailed"><div>${bodyFigure('front', ex)}<span>Frente</span></div><div>${bodyFigure('back', ex)}<span>Costas</span></div></div>`;
+  }
+
+  function bodyFigure(side, ex) {
+    const cls = muscle => muscleRegionClass(muscle, ex);
+    const common = `<g class="body-base">
+      <circle cx="50" cy="15" r="10"/><path d="M44 25h12l2 8H42z"/>
+      <path d="M38 31Q50 27 62 31L69 66 62 102H38L31 66z"/>
+      <path d="M34 34Q23 36 19 49L8 91q-2 8 5 10l7-5 12-36 8-18z"/>
+      <path d="M66 34q11 2 15 15l11 42q2 8-5 10l-7-5-12-36-8-18z"/>
+      <path d="M39 99l-7 50 1 60h14l3-57 1-53z"/>
+      <path d="M61 99l7 50-1 60H53l-3-57-1-53z"/>
+    </g>`;
+    const front = `<g class="${cls('Ombros')}"><ellipse cx="32" cy="40" rx="7" ry="9"/><ellipse cx="68" cy="40" rx="7" ry="9"/></g>
+      <g class="${cls('Peito')}"><path d="M39 39q10-5 10 12v12q-11 1-15-7z"/><path d="M61 39q-10-5-10 12v12q11 1 15-7z"/></g>
+      <g class="${cls('Bíceps')}"><path d="M22 51q7-3 8 6l-6 22q-5 5-9 0z"/><path d="M78 51q-7-3-8 6l6 22q5 5 9 0z"/></g>
+      <g class="${cls('Core')}"><path d="M43 65h6v11h-7zm8 0h6l1 11h-7zm-9 13h7v10h-8zm9 0h7l1 10h-8zm-10 12h8v9H39zm10 0h8l2 9H51z"/></g>
+      <g class="${cls('Quadríceps')}"><path d="M39 105q9 4 9 17l-4 35q-7 8-11-2l2-35z"/><path d="M61 105q-9 4-9 17l4 35q7 8 11-2l-2-35z"/></g>
+      <g class="${cls('Panturrilhas')}"><path d="M35 164q10 1 9 15l-3 22q-8 6-9-3z"/><path d="M65 164q-10 1-9 15l3 22q8 6 9-3z"/></g>`;
+    const back = `<g class="${cls('Ombros')}"><ellipse cx="32" cy="40" rx="7" ry="9"/><ellipse cx="68" cy="40" rx="7" ry="9"/></g>
+      <g class="${cls('Costas')}"><path d="M38 39q12-5 12 8v43q-10 1-16-16z"/><path d="M62 39q-12-5-12 8v43q10 1 16-16z"/></g>
+      <g class="${cls('Tríceps')}"><path d="M25 49q7 1 5 11l-6 21q-6 2-8-5l6-23z"/><path d="M75 49q-7 1-5 11l6 21q6 2 8-5l-6-23z"/></g>
+      <g class="${cls('Glúteos')}"><path d="M38 94q12-5 12 9v12q-13 7-17-4z"/><path d="M62 94q-12-5-12 9v12q13 7 17-4z"/></g>
+      <g class="${cls('Posteriores')}"><path d="M37 116q11-4 11 9l-4 35q-8 5-11-5z"/><path d="M63 116q-11-4-11 9l4 35q8 5 11-5z"/></g>
+      <g class="${cls('Panturrilhas')}"><path d="M35 164q10 0 9 14l-3 24q-9 3-9-5z"/><path d="M65 164q-10 0-9 14l3 24q9 3 9-5z"/></g>`;
+    return `<svg class="body-figure" viewBox="0 0 100 220" aria-hidden="true" focusable="false">${common}${side === 'back' ? back : front}</svg>`;
+  }
+
+  function muscleRegionClass(muscle, ex) {
+    const secondary = Array.isArray(ex.secondary) ? ex.secondary : ex.secondary ? [ex.secondary] : [];
+    if (muscle === ex.muscle) return 'muscle-region is-primary';
+    if (secondary.includes(muscle)) return 'muscle-region is-secondary';
+    return 'muscle-region';
   }
 
   function renderProgress(db) {
@@ -786,7 +933,7 @@
         </div>
         <p class="health-note">Este app apoia o registro de treino e não substitui avaliação de profissional de saúde ou educação física. Dor aguda, tontura ou mal-estar são sinais para interromper a sessão.</p>
       </section>
-      <footer class="app-footer">Terceiro v2 · histórico local · atualizado em 2026</footer>
+      <footer class="app-footer">Terceiro v2.1 · histórico local · atualizado em 2026</footer>
     </div>`;
   }
 
@@ -955,18 +1102,30 @@
   function openExerciseInfo(exerciseId) {
     const ex = EXERCISES[exerciseId];
     if (!ex) return;
-    const image = ex.image ? `${IMAGE_ROOT}${ex.image}/0.jpg` : '';
-    openDialog(`<div class="sheet-exercise-media">${image ? `<img src="${image}" alt="Demonstração de ${escapeAttr(ex.name)}">` : ''}</div><p class="dialog-kicker">${escapeHtml(ex.muscle)} · ${escapeHtml(ex.equipment)}</p><h2>${escapeHtml(ex.name)}</h2><ul class="cue-list">${ex.cues.map(cue => `<li>${escapeHtml(cue)}</li>`).join('')}</ul><div class="dialog-actions"><button type="button" data-action="close-dialog">Voltar</button><button type="button" class="primary-action" data-action="swap-exercise" data-exercise="${escapeAttr(exerciseId)}">Trocar exercício</button></div>`);
+    const secondary = Array.isArray(ex.secondary) ? ex.secondary : ex.secondary ? [ex.secondary] : [];
+    openDialog(`<p class="dialog-kicker">Mapa corporal</p><h2>${escapeHtml(ex.name)}</h2>
+      <div class="anatomy-detail">${renderAnatomyMap(ex)}<div class="anatomy-legend"><span><i class="primary"></i><b>Principal</b>${escapeHtml(ex.muscle)}</span>${secondary.length ? `<span><i class="secondary"></i><b>Auxiliares</b>${escapeHtml(secondary.join(' + '))}</span>` : ''}</div></div>
+      <p class="movement-label">${escapeHtml(ex.equipment)} · ${escapeHtml(ex.pattern)}</p>
+      <h3 class="cue-title">Pontos de execução</h3><ul class="cue-list">${ex.cues.map(cue => `<li>${escapeHtml(cue)}</li>`).join('')}</ul>
+      <div class="dialog-actions"><button type="button" data-action="close-dialog">Voltar</button><button type="button" class="primary-action" data-action="swap-exercise" data-exercise="${escapeAttr(exerciseId)}">Trocar exercício</button></div>`);
   }
 
   function openSwap(exerciseId) {
     const current = EXERCISES[exerciseId];
     if (!current) return;
-    const alternatives = Object.entries(EXERCISES)
-      .filter(([id, ex]) => id !== exerciseId && (ex.muscle === current.muscle || ex.pattern === current.pattern))
-      .slice(0, 8);
-    const list = alternatives.map(([id, ex]) => `<button type="button" class="swap-option" data-action="choose-swap" data-exercise="${escapeAttr(exerciseId)}" data-replacement="${escapeAttr(id)}"><span>${initials(ex.name)}</span><div><strong>${escapeHtml(ex.name)}</strong><small>${escapeHtml(ex.equipment)} · ${escapeHtml(ex.muscle)}</small></div><b>trocar</b></button>`).join('');
-    openDialog(`<p class="dialog-kicker">Alternativas compatíveis</p><h2>Trocar ${escapeHtml(current.name)}</h2><p>O histórico do exercício anterior continua preservado.</p><div class="swap-list">${list || '<p class="muted-copy">Nenhuma alternativa cadastrada.</p>'}</div><div class="dialog-actions"><button type="button" data-action="close-dialog">Cancelar</button></div>`);
+    const db = loadDB();
+    const used = new Set(db.active?.exercises.map(ex => ex.exerciseId) || []);
+    const candidateIds = ALTERNATIVES[exerciseId] || [];
+    const availableIds = candidateIds.filter(id => EXERCISES[id] && !used.has(id));
+    const blocked = candidateIds.filter(id => used.has(id)).length;
+    const list = availableIds.map(id => {
+      const ex = EXERCISES[id];
+      return `<button type="button" class="swap-option" data-action="choose-swap" data-exercise="${escapeAttr(exerciseId)}" data-replacement="${escapeAttr(id)}"><span>${initials(ex.name)}</span><div><strong>${escapeHtml(ex.name)}</strong><small>${escapeHtml(ex.equipment)} · ${escapeHtml(ex.pattern)}</small></div><b>trocar</b></button>`;
+    }).join('');
+    const empty = blocked
+      ? 'As alternativas equivalentes já aparecem nesta sessão. Mantive o treino sem duplicidade.'
+      : 'Ainda não há outra alternativa equivalente cadastrada para este movimento.';
+    openDialog(`<p class="dialog-kicker">Mesma função, sem repetir</p><h2>Trocar ${escapeHtml(current.name)}</h2><p>Mostramos apenas exercícios de <b>${escapeHtml(current.pattern)}</b> que ainda não estão nesta sessão.</p><div class="swap-list">${list || `<p class="swap-empty">${empty}</p>`}</div><div class="dialog-actions"><button type="button" data-action="close-dialog">Cancelar</button></div>`);
   }
 
   function chooseSwap(currentId, replacementId) {
@@ -976,6 +1135,12 @@
     const replacement = EXERCISES[replacementId];
     if (!record || !replacement || record.sets.some(set => set.done)) {
       toast('Só é possível trocar antes de concluir séries deste exercício.');
+      closeDialog();
+      return;
+    }
+    const duplicate = active.exercises.some(ex => ex !== record && ex.exerciseId === replacementId);
+    if (duplicate) {
+      toast('Esse exercício já está na sessão. Escolha outra alternativa.');
       closeDialog();
       return;
     }
