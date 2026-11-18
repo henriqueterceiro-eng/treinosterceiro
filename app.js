@@ -433,6 +433,7 @@
     saveDB(db);
     state.openExercise = active.exercises[0]?.exerciseId || null;
     render();
+    window.scrollTo({ top: 0, behavior: 'auto' });
     toast('Sessão iniciada. Primeira série: técnica antes da carga.');
   }
 
@@ -933,7 +934,7 @@
         </div>
         <p class="health-note">Este app apoia o registro de treino e não substitui avaliação de profissional de saúde ou educação física. Dor aguda, tontura ou mal-estar são sinais para interromper a sessão.</p>
       </section>
-      <footer class="app-footer">Terceiro v2.1 · histórico local · atualizado em 2026</footer>
+      <footer class="app-footer">Terceiro v2.2 · histórico local · atualizado em 2026</footer>
     </div>`;
   }
 

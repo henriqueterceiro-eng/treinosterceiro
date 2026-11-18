@@ -1,4 +1,4 @@
-const CACHE = 'terceiro-v2.1-2026-11-18';
+const CACHE = 'terceiro-v2.2-modern-2026-11-18';
 const CORE = ['./', './index.html', './styles.css', './app.js', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', event => {
